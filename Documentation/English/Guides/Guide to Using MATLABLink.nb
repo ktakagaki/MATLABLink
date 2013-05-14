@@ -1,0 +1,189 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5287,        179]
+NotebookOptionsPosition[      3488,        127]
+NotebookOutlinePosition[      4705,        159]
+CellTagsIndexPosition[      4662,        156]
+WindowTitle->Guide to Using MATLABLink - Wolfram Mathematica
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" ", "GuideColorBar",
+ CellMargins->{{Inherited, Inherited}, {-5, 0}}],
+
+Cell[TextData[{
+ ButtonBox["Mathematica",
+  BaseStyle->{"Link", "LinkTrail"},
+  ButtonData->"paclet:MATLABLink/guide/MATLABLink"],
+ StyleBox[" > ", "LinkTrailSeparator"]
+}], "LinkTrail"],
+
+Cell[CellGroupData[{
+
+Cell["Guide to Using MATLABLink", "GuideTitle",
+ CellID->942062912],
+
+Cell[TextData[{
+ "MATLABLink allows calling of MATLAB functions from ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ". This is useful when using  Toolboxes and .m scripts written by others \
+within your ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " notebook."
+}], "GuideAbstract",
+ CellID->2001916300],
+
+Cell["\<\
+MATLABLink is a wrapper for the Java API matlabcontrol \
+(http://code.google.com/p/matlabcontrol/).\
+\>", "GuideAbstract",
+ CellID->33102563],
+
+Cell[TextData[{
+ "Install the package by decompressing and copying the whole directory into a \
+directory on the ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " application path (e.g.  \
+C:\\Users\\....\\AppData\\Roaming\\Mathematica\\Applications\\MATLABLink). \
+This documentation should become available in the ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " documentation center, upon restart of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "."
+}], "GuideAbstract",
+ CellID->304680855],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"<<", "MATLABConnect`"}]], "InlineGuideFunction"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " Load this package",
+ "---must be called once at the beginning"
+}], "GuideText",
+ CellID->403807988],
+
+Cell[TextData[{
+ Cell[BoxData["MATLABConnect"], "InlineGuideFunction"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " Connect to a MATLAB session---must be called once at the beginning"
+}], "GuideText",
+ CellID->203374175],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"MATLABSet", "[", 
+   RowBox[{"\"\<aML\>\"", ",", " ", "aMM"}], "]"}]], "InlineGuideFunction"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " Set the variable name \"aML\" within the MATLAB workspace to the ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " value aMM\n(should work for doubles, complex numbers, and vectors/matrices \
+thereof) "
+}], "GuideText",
+ CellID->1463276848],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"MATLABEval", "[", "\"\<ans = norm(aML)\>\"", "]"}]], 
+  "InlineGuideFunction"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " Perform an operation within the MATLAB workspace"
+}], "GuideText",
+ CellID->87431090],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"aMM", " ", "=", " ", 
+   RowBox[{"MATLABGet", "[", "\"\<aML\>\"", "]"}]}]], "InlineGuideFunction"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " Get the variable named \"aML\" from the MATLAB workspace and return in \
+Mathematica"
+}], "GuideText",
+ CellID->173474873]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Guide to Using MATLABLink - Wolfram Mathematica",
+TaggingRules->{
+ "ModificationHighlight" -> False, 
+  "Metadata" -> {
+   "built" -> "{2012, 9, 5, 12, 16, 38.0873422}", "context" -> "MATLABLink`", 
+    "keywords" -> {}, "index" -> True, "label" -> "M A T L A B Link Guide", 
+    "language" -> "en", "paclet" -> "MATLABLink", "status" -> "None", 
+    "summary" -> 
+    "MATLABLink allows calling of MATLAB functions from Mathematica. This is \
+useful when using Toolboxes and .m scripts written by others within your \
+Mathematica notebook.", "synonyms" -> {}, "title" -> 
+    "Guide to Using MATLABLink", "type" -> "Guide", "uri" -> 
+    "MATLABLink/guide/Guide to Using MATLABLink"}, "LinkTrails" -> "", 
+  "SearchTextTranslated" -> ""},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "ShiftJIS"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[618, 21, 75, 1, 70, "GuideColorBar"],
+Cell[696, 24, 186, 5, 70, "LinkTrail"],
+Cell[CellGroupData[{
+Cell[907, 33, 67, 1, 70, "GuideTitle",
+ CellID->942062912],
+Cell[977, 36, 316, 10, 70, "GuideAbstract",
+ CellID->2001916300],
+Cell[1296, 48, 151, 4, 70, "GuideAbstract",
+ CellID->33102563],
+Cell[1450, 54, 511, 15, 70, "GuideAbstract",
+ CellID->304680855],
+Cell[1964, 71, 241, 8, 70, "GuideText",
+ CellID->403807988],
+Cell[2208, 81, 226, 6, 70, "GuideText",
+ CellID->203374175],
+Cell[2437, 89, 432, 12, 70, "GuideText",
+ CellID->1463276848],
+Cell[2872, 103, 257, 8, 70, "GuideText",
+ CellID->87431090],
+Cell[3132, 113, 314, 9, 70, "GuideText",
+ CellID->173474873]
+}, Open  ]],
+Cell[3461, 125, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
